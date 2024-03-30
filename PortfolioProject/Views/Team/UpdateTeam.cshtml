@@ -1,0 +1,36 @@
+﻿@model PortfolioProject.Models.TblTeams
+@{
+    ViewBag.Title = "UpdateTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3 class="mt-3">UpdateTeam</h3>
+
+<form method="post">
+    <input type="hidden" name="TeamId" value="@Model.TeamId" />
+    <label>Img Url</label>
+    <input type="text" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+
+    <label>Ad Soyad</label>
+    <input type="text" name="NameSurname" value="@Model.NameSurname" class="form-control" />
+
+    <label>Görev</label>
+    <input type="text" name="Title" value="@Model.Title" class="form-control" />
+
+    <label>Açıklama</label>
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
+
+    <label>Twitter Adresi</label>
+    <input type="text" name="TwitterUrl" value="@Model.TwitterUrl" class="form-control" />
+
+    <label>Facebook Adresi</label>
+    <input type="text" name="FacebookUrl" value="@Model.FacebookUrl" class="form-control" />
+
+    <label>Instagram  Adresi</label>
+    <input type="text" name="InstagramUrl" value="@Model.InstagramUrl" class="form-control" />
+
+    <label>Linkedin  Adresi</label>
+    <input type="text" name="LinkedInUrl" value="@Model.LinkedInUrl" class="form-control" />
+
+    <button class="btn btn-outline-success mt-2">Güncelle</button>
+</form>

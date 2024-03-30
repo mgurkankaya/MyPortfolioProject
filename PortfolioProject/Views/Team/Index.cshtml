@@ -1,0 +1,43 @@
+﻿@model List<PortfolioProject.Models.TblTeams> 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3 class="mt-3">My Team</h3>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Img Url</th>
+            <th>NameSurname</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>TwitterUrl</th>
+            <th>FacebookUrl</th>
+            <th>LinkedInUrl</th>
+            <th>InstagramUrl</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ImageUrl</td>
+                <td>@item.NameSurname</td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.TwitterUrl</td>
+                <td>@item.FacebookUrl</td>
+                <td>@item.LinkedInUrl</td>
+                <td>@item.InstagramUrl</td>
+                <td><a href="/Team/DeleteTeam/@item.TeamId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Team/UpdateTeam/@item.TeamId" class="btn btn-info">Güncelle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Team/AddTeam" class="btn btn-warning mt-3">Ekle</a>
+     

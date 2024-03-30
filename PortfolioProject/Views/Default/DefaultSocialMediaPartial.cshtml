@@ -1,0 +1,6 @@
+﻿@model List<PortfolioProject.Models.TblSocialMedias>
+@foreach (var item in Model)
+{
+    <a target="_blank" href="@item.Url"><i class="@item.Icon"></i></a>
+
+}

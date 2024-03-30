@@ -1,0 +1,31 @@
+﻿@model PortfolioProject.Models.TblExperiences
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3 class="mt-3">Update Experience</h3>
+
+<form method="post">
+    <input type="hidden" name="ExperienceId" value="@Model.ExperienceId" />
+
+    <label>Başlangıç Yılı</label>
+    <input name="StartYear" class="form-control" value="@Model.StartYear" />
+
+    <label>Bitiş Yılı</label>
+    <input name="EndYear" class="form-control" value="@Model.EndYear" />
+
+    <label>Görev</label>
+    <input name="Title" class="form-control" value="@Model.Title" />
+
+    <label>Açıklama</label>
+    <input name="Description" class="form-control" value="@Model.Description" />
+
+    <label>Şirket</label>
+    <input name="Company" class="form-control" value="@Model.Company" />
+
+    <label>Lokasyon</label>
+    <input name="Location" class="form-control" value="@Model.Location" />
+
+    <button class="btn btn-outline-success mt-2">Güncelle</button>
+</form>

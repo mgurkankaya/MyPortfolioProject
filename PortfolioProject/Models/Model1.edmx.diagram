@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="86ababb28c024f249abd383d916d663f" Name="Diagram1">
+        <EntityTypeShape EntityType="PortfolioProjectModel.sysdiagrams" Width="1.5" PointX="0.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblAbouts" Width="1.5" PointX="2.375" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblCategories" Width="1.5" PointX="2.375" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblContacts" Width="1.5" PointX="4.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblExperiences" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblFeatures" Width="1.5" PointX="6.125" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblMessages" Width="1.5" PointX="8" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblServices" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblSkills" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblSocialMedias" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblTeams" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblTestimonials" Width="1.5" PointX="8" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TlbProjects" Width="1.5" PointX="4.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="PortfolioProjectModel.FK_TlbProjects_TblCategories" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PortfolioProjectModel.TblAdmins" Width="1.5" PointX="9.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
